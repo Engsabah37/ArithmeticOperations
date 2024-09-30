@@ -1,30 +1,26 @@
 
-package com.mycompany.scanneroo;
-
+package scanner;
 import java.util.Scanner;
-
-public class Scanneroo {
+public class scanneroo {
 
     public static void main(String[] args) {
-     Scanner scan = new Scanner(System.in);
-        int x,y,z;
-        
-        /*
-        طلبنا من المستخدم إدخال الرقم الأول وقمنا بقراءة الرقم
-        قمنا بتخزين الرقم الذي يدخله المستخدم في المتغير
-        */
-        System.out.println("Enter the first number: ");
-        x = scan.nextInt();
-        
-        /*
-        طلبنا من المستخدم إدخال الرقم الثاني وقمنا بقراءة الرقم
-        قمنا بتخزين الرقم الذي يدخله المستخدم في المتغير
-        */
-        System.out.println("Enter the second number: ");
-        y = scan.nextInt();
-        
-        // قمنا بجمع الرقمين وطباعة الناتج
-        z = x + y;
-        System.out.println("the result is: " + z);
+        // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+ int numInputs = 10, input = 0, sum = 0, stopLoop = 999;
+ System.out.println("أعداد 10 أدخل");
+ for (int i = 0; i < numInputs; i++) {
+ numInputs = input.nextInt(); 
+ if (input == stopLoop){
+ break;
+ } 
+ else
+ {
+ sum += input; 
+ }
+ }
+ System.out.println(":الأعداد مجموع "+ sum);
+}
+
     }
+    
 }
